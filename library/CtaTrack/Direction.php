@@ -1,5 +1,5 @@
 <?php
-class CtaTrack_Directions extends CtaTrack_AbstractCtaTrack
+class CtaTrack_Direction extends CtaTrack_AbstractCtaTrack
 {
     /**
      *

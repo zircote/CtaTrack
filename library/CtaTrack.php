@@ -2,7 +2,7 @@
 
 class CtaTrack extends Zend_Service_Abstract
 {
-    const ENDPOINT = '';
+    const CTA_ENDPOINT = 'http://www.ctabustracker.com/bustime/api/v1';
 
     protected $_key;
 
@@ -41,7 +41,7 @@ class CtaTrack extends Zend_Service_Abstract
     /**
      *
      * @param mixed $routeId
-     * @return ArrayIterator[CtaTrack_Directions]
+     * @return ArrayIterator[CtaTrack_Direction]
      */
     public function getDirections($routeId)
     {
@@ -99,6 +99,7 @@ class CtaTrack extends Zend_Service_Abstract
      *
      * @param string $routeId
      * @param string $routeDirection
+     * @return ArrayIterator[CtaTrack_ServiceBulletin]
      */
     public function getServiceBulletinsByRoute($routeId, $routeDirection = null)
     {
@@ -107,6 +108,7 @@ class CtaTrack extends Zend_Service_Abstract
     /**
      *
      * @param string $stopId
+     * @return ArrayIterator[CtaTrack_ServiceBulletin]
      */
     public function getServiceBulletinsStop($stopId)
     {
