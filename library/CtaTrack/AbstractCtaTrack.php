@@ -1,5 +1,13 @@
 <?php
-
+/**
+ *
+ *
+ * @author Robert Allen <rallen@ifbyphone.com>
+ * @package
+ * @subpackage
+ *
+ *
+ */
 abstract class CtaTrack_AbstractCtaTrack
 {
     /**

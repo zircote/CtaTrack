@@ -1,5 +1,13 @@
 <?php
-
+/**
+ *
+ *
+ * @author Robert Allen <rallen@ifbyphone.com>
+ * @package
+ * @subpackage
+ *
+ *
+ */
 class CtaTrack extends Zend_Service_Abstract
 {
     const CTA_ENDPOINT = 'http://www.ctabustracker.com/bustime/api/v1';
@@ -111,6 +119,27 @@ class CtaTrack extends Zend_Service_Abstract
      * @return ArrayIterator[CtaTrack_ServiceBulletin]
      */
     public function getServiceBulletinsStop($stopId)
+    {
+
+    }
+    /**
+     * A single five-digit code to tell the server which station you'd like to
+     * receive predictions for. See appendix for information about valid station
+     * codes.
+     *
+     * @param integer $mapId
+     */
+    public function getArrivalsByMapId($mapId)
+    {
+
+    }
+    /**
+     *
+     * @param integer $stopId
+     * @param integer|null $max
+     * @param string|integer $route
+     */
+    public function getArrivalsByStopId($stopId, $max = null, $route = null)
     {
 
     }

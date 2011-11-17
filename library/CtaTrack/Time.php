@@ -1,5 +1,13 @@
 <?php
-
+/**
+ *
+ *
+ * @author Robert Allen <rallen@ifbyphone.com>
+ * @package
+ * @subpackage
+ *
+ *
+ */
 class CtaTrack_Time extends CtaTrack_AbstractCtaTrack
 {
     /**

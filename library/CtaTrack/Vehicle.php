@@ -1,5 +1,13 @@
 <?php
-
+/**
+ *
+ *
+ * @author Robert Allen <rallen@ifbyphone.com>
+ * @package
+ * @subpackage
+ *
+ *
+ */
 class CtaTrack_Vehicle extends CtaTrack_AbstractCtaTrack
 {
     /**
