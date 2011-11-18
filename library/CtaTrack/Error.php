@@ -3,8 +3,7 @@
  *
  *
  * @author Robert Allen <rallen@ifbyphone.com>
- * @package
- * @subpackage
+   * @package CtaTracker
  *
  * @property protected $_prm string
  * @property protected $_ptr string

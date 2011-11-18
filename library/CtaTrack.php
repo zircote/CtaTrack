@@ -3,17 +3,20 @@
  *
  *
  * @author Robert Allen <rallen@ifbyphone.com>
- * @package
- * @subpackage
+ * @package CtaTracker
  *
  *
  */
 class CtaTrack extends Zend_Service_Abstract
 {
-    const CTA_ENDPOINT = 'http://www.ctabustracker.com/bustime/api/v1';
-
+    const CTA_BUS_ENDPOINT = 'http://www.ctabustracker.com/bustime/api/v1';
+    const CTA_TRAIN_ENDPOINT = 'lapi.transitchicago.com/api/1.0/ttarrivals.aspx';
+    /**
+     * Your unique API key, assigned to you after agreeing to DLA and requesting
+     * a key be generated for you.
+     * @var string
+     */
     protected $_key;
-
     /**
      * @return CtaTrack_Time
      */
@@ -142,5 +145,12 @@ class CtaTrack extends Zend_Service_Abstract
     public function getArrivalsByStopId($stopId, $max = null, $route = null)
     {
 
+    }
+    /**
+     * @return CtaTrack_RouteInfo
+     */
+    public function getRouteInfo()
+    {
+        
     }
 }
